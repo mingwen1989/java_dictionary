@@ -1,9 +1,9 @@
-<h1>Dictionary</h1>
+<h1>Words</h1>
 
-#if ($word)
-  <h1>$word.getName()()</h1>
+#if ($word.getName() == "null")
+  <p> Words not found. </p>
 #else
-  <p>Word List: </p>
+  <p></p>
 #end
 
 <ul>
