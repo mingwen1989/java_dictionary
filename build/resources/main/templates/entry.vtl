@@ -1,0 +1,12 @@
+<h1>Dictionary Entry</h1>
+
+<h3 class="entry">$word.getName()</h3>
+
+<ul>
+  #foreach($definition in $word.getDefinitions())
+   <li>definition: $definition.getDescription()</li>
+  #end
+</ul>
+
+<a href="/words/$word.getId()/definitions/new">Add a new definition</a><br>
+<a href="/"><< Back to Dictionary</a>
