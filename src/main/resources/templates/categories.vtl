@@ -1,0 +1,7 @@
+<h1>Dictionary</h1>
+<ul>
+  #foreach ($category in $categories)
+    <li><a href="/words/$category.getId()">$category.getName()</a></li>
+  #end
+</ul>
+<a href="/categories/new">Add New Word</a>

@@ -1,0 +1,12 @@
+<h1>Dictionary</h1>
+
+<h3>$category.getName()</h3>
+
+<ul>
+  #foreach($task in $category.getTasks())
+   <li>$task.getDescription()</li>
+  #end
+</ul>
+
+<a href="/words/$category.getId()/definitions/new">Add a new definition</a><br>
+<a href="/words"><< Back to Dictionary</a>
