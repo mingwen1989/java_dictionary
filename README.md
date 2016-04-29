@@ -4,12 +4,12 @@
 
 ## Description
 
-Simple web dictionary with add word and definition functions.
+Simple web dictionary that allows you to view words and add definitions.
 
 ## Setup and Installation Requirements
 
   Clone the repo.  
-  Navigate to the project directory.
+  Navigate to the project directory.  
   Run a instance of the gradle web server with 'gradle run'.  
   Navigate to localhost:4567 to view the dictionary in action.
 
