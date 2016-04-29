@@ -24,62 +24,51 @@ public class AppTest extends FluentTest {
   @Test
   public void rootTest() {
     goTo("http://localhost:4567/");
-    assertThat(pageSource()).contains("Todo list!");
-    assertThat(pageSource()).contains("View Category List");
-    assertThat(pageSource()).contains("Add a New Category");
+    assertThat(pageSource()).contains("Dictionary");
   }
   @Test
-  public void categoryIsCreatedTest() {
+  public void wordIsCreatedTest() {
     goTo("http://localhost:4567/");
-    click("a", withText("Add a New Category"));
-    fill("#name").with("Household chores");
+    click("a", withText("Add New Word"));
+    fill("#name").with("Einstenium");
     submit(".btn");
-    assertThat(pageSource()).contains("Your category has been saved.");
+    assertThat(pageSource()).contains("Success!");
   }
-
   @Test
-  public void categoryIsDisplayedTest() {
-    goTo("http://localhost:4567/categories/new");
-    fill("#name").with("Household chores");
+  public void wordIsClickedTest() {
+    goTo("http://localhost:4567/");
+    click("a", withText("Add New Word"));
+    fill("#name").with("Einstenium");
     submit(".btn");
-    click("a", withText("View categories"));
-    assertThat(pageSource()).contains("Household chores");
+    goTo("http://localhost:4567/");
+    click("a", withText("Einstenium"));
+    assertThat(pageSource()).contains("Entry");
   }
-
   @Test
-  public void categoryShowPageDisplaysName() {
-    goTo("http://localhost:4567/categories/new");
-    fill("#name").with("Household chores");
+  public void wordDefinitionIsCreated() {
+    goTo("http://localhost:4567/");
+    click("a", withText("Add New Word"));
+    fill("#name").with("Extremely");
     submit(".btn");
-    click("a", withText("View categories"));
-    click("a", withText("Household chores"));
-    assertThat(pageSource()).contains("Household chores");
+    goTo("http://localhost:4567/");
+    click("a", withText("Extremely"));
+    click("a", withText("Add a new definition"));
+    fill("#description").with("to a pronounced degree");
+    submit(".btn");
+    assertThat(pageSource()).contains("Success!");
   }
 
-  @Test
-  public void categoryTasksFormIsDisplayed() {
-    goTo("http://localhost:4567/categories/new");
-    fill("#name").with("Shopping");
+  public void wordDefinitionIsAccessed() {
+    goTo("http://localhost:4567/");
+    click("a", withText("Add New Word"));
+    fill("#name").with("Extremely");
     submit(".btn");
-    click("a", withText("View categories"));
-    click("a", withText("Shopping"));
-    click("a", withText("Add a new task"));
-    assertThat(pageSource()).contains("Add a task to Shopping");
+    goTo("http://localhost:4567/");
+    click("a", withText("Extremely"));
+    click("a", withText("Add a new definition"));
+    fill("#description").with("to a pronounced degree");
+    submit(".btn");
+    click("a", withText("View Entry"));
+    assertThat(pageSource()).contains("to a pronounced degree");
   }
-
-  @Test
-  public void tasksIsAddedAndDisplayed() {
-    goTo("http://localhost:4567/categories/new");
-    fill("#name").with("Banking");
-    submit(".btn");
-    click("a", withText("View categories"));
-    click("a", withText("Banking"));
-    click("a", withText("Add a new task"));
-    fill("#description").with("Deposit paycheck");
-    submit(".btn");
-    click("a", withText("View categories"));
-    click("a", withText("Banking"));
-    assertThat(pageSource()).contains("Deposit paycheck");
-  }
-
 }

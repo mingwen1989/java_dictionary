@@ -1,0 +1,14 @@
+<h1>Words</h1>
+
+#if ($word.getName() == "null")
+  <p> Words not found. </p>
+#else
+  <p></p>
+#end
+
+<ul>
+  #foreach ($word in $words)
+    <li class="entry"><a href="/entry/$word.getId()">$word.getName()</a></li>
+  #end
+</ul>
+<a href="/entry/new">Add New Word</a>

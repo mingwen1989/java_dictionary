@@ -17,16 +17,6 @@ public class DefinitionTest {
     assertEquals("stupendous", myDefinition.getDescription());
   }
   @Test
-    public void isCompleted_isFalseAfterInstantiation_false() {
-    Definition myDefinition = new Definition("stupendous");
-    assertEquals(false, myDefinition.isCompleted());
-  }
-  @Test
-  public void getCreatedAt_instantiatesWithCurrentTime_today(){
-    Definition myDefinition = new Definition("stupendous");
-    assertEquals(LocalDateTime.now().getDayOfWeek(), myDefinition.getCreatedAt().getDayOfWeek());
-  }
-  @Test
   public void all_returnsAllInstancesOfDefinition_true(){
     Definition firstDefinition = new Definition("stupendous");
     Definition secondDefinition = new Definition("itchy");
