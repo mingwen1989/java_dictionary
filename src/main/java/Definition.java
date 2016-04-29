@@ -2,14 +2,14 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 
-public class Task {
+public class Definition {
   private String mDescription;
   private boolean mCompleted;
   private LocalDateTime mCreatedAt;
-  private static ArrayList<Task> instances = new ArrayList<Task>();
+  private static ArrayList<Definition> instances = new ArrayList<Definition>();
   private int mId;
 
-  public Task(String description) {
+  public Definition(String description) {
     mDescription = description;
     mCompleted = false;
     mCreatedAt = LocalDateTime.now();
@@ -26,7 +26,7 @@ public class Task {
   public LocalDateTime getCreatedAt(){
     return mCreatedAt;
   }
-  public static ArrayList<Task> all() {
+  public static ArrayList<Definition> all() {
     return instances;
   }
 
@@ -36,7 +36,7 @@ public class Task {
   public int getId(){
     return mId;
   }
-  public static Task find(int id) {
+  public static Definition find(int id) {
   try {
     return instances.get(id - 1);
   } catch (IndexOutOfBoundsException e) {

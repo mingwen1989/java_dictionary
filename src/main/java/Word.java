@@ -1,23 +1,23 @@
 import java.util.ArrayList;
 
-public class Category {
+public class Word {
   private String mName;
-  private static ArrayList<Category> instances = new ArrayList<Category>();
+  private static ArrayList<Word> instances = new ArrayList<Word>();
   private int mId;
-  private ArrayList<Task> mTasks;
+  private ArrayList<Definition> mDefinitions;
 
-  public Category(String name) {
+  public Word(String name) {
     mName = name;
     instances.add(this);
     mId = instances.size();
-    mTasks = new ArrayList<Task>();
+    mDefinitions = new ArrayList<Definition>();
   }
 
   public String getName() {
     return mName;
   }
 
-  public static ArrayList<Category> all() {
+  public static ArrayList<Word> all() {
     return instances;
   }
 
@@ -29,17 +29,17 @@ public class Category {
     return mId;
   }
 
-  public static Category find(int id) {
+  public static Word find(int id) {
     try {
       return instances.get(id - 1);
     } catch (IndexOutOfBoundsException e) {
       return null;
     }
   }
-  public ArrayList<Task> getTasks() {
-    return mTasks;
+  public ArrayList<Definition> getDefinitions() {
+    return mDefinitions;
 }
-public void addTask(Task task) {
-  mTasks.add(task);
+public void addDefinition(Definition task) {
+  mDefinitions.add(task);
 }
 }
