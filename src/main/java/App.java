@@ -25,8 +25,8 @@ public class App {
 
     post("/entry", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
-      String name = request.queryParams("name");
-      Word newWord = new Word(name);
+      String word = request.queryParams("word");
+      Word newWord = new Word(word);
       model.put("template", "templates/word-success.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
@@ -52,8 +52,8 @@ public class App {
 
       Word word = Word.find(Integer.parseInt(request.queryParams("wordId")));
 
-      String description = request.queryParams("description");
-      Definition newDefinition = new Definition(description);
+      String definition = request.queryParams("definition");
+      Definition newDefinition = new Definition(definition);
 
       word.addDefinition(newDefinition);
 
