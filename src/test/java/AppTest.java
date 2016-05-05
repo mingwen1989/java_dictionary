@@ -30,7 +30,7 @@ public class AppTest extends FluentTest {
   public void wordIsCreatedTest() {
     goTo("http://localhost:4567/");
     click("a", withText("Add New Word"));
-    fill("#name").with("Einstenium");
+    fill("#word").with("Einstenium");
     submit(".btn");
     assertThat(pageSource()).contains("Success!");
   }
@@ -38,7 +38,7 @@ public class AppTest extends FluentTest {
   public void wordIsClickedTest() {
     goTo("http://localhost:4567/");
     click("a", withText("Add New Word"));
-    fill("#name").with("Einstenium");
+    fill("#word").with("Einstenium");
     submit(".btn");
     goTo("http://localhost:4567/");
     click("a", withText("Einstenium"));
@@ -48,12 +48,12 @@ public class AppTest extends FluentTest {
   public void wordDefinitionIsCreated() {
     goTo("http://localhost:4567/");
     click("a", withText("Add New Word"));
-    fill("#name").with("Extremely");
+    fill("#word").with("Extremely");
     submit(".btn");
     goTo("http://localhost:4567/");
     click("a", withText("Extremely"));
     click("a", withText("Add a new definition"));
-    fill("#description").with("to a pronounced degree");
+    fill("#definition").with("to a pronounced degree");
     submit(".btn");
     assertThat(pageSource()).contains("Success!");
   }
@@ -61,12 +61,12 @@ public class AppTest extends FluentTest {
   public void wordDefinitionIsAccessed() {
     goTo("http://localhost:4567/");
     click("a", withText("Add New Word"));
-    fill("#name").with("Extremely");
+    fill("#word").with("Extremely");
     submit(".btn");
     goTo("http://localhost:4567/");
     click("a", withText("Extremely"));
     click("a", withText("Add a new definition"));
-    fill("#description").with("to a pronounced degree");
+    fill("#definition").with("to a pronounced degree");
     submit(".btn");
     click("a", withText("View Entry"));
     assertThat(pageSource()).contains("to a pronounced degree");

@@ -9,11 +9,11 @@ public class Definition {
     mDescription = description;
     instances.add(this);
     mId = instances.size();
-    }
+  }
 
   public String getDescription() {
     return mDescription;
-    }
+  }
   public static ArrayList<Definition> all() {
     return instances;
   }
@@ -25,11 +25,11 @@ public class Definition {
     return mId;
   }
   public static Definition find(int id) {
-  try {
+    try {
     return instances.get(id - 1);
-  } catch (IndexOutOfBoundsException exception) {
+    } catch (IndexOutOfBoundsException exception) {
     return null;
+    }
   }
-}
 
 }

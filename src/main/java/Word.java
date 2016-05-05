@@ -31,15 +31,15 @@ public class Word {
 
   public static Word find(int id) {
     try {
-      return instances.get(id - 1);
+    return instances.get(id - 1);
     } catch (IndexOutOfBoundsException e) {
-      return null;
+    return null;
     }
   }
   public ArrayList<Definition> getDefinitions() {
     return mDefinitions;
-}
-public void addDefinition(Definition definition) {
-  mDefinitions.add(definition);
-}
+  }
+  public void addDefinition(Definition definition) {
+    mDefinitions.add(definition);
+  }
 }

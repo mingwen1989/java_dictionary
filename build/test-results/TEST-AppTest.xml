@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-04-29T21:34:36" hostname="Mings-MacBook-Pro.local" time="2.109">
+<testsuite name="AppTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-05-05T03:23:18" hostname="Mings-MacBook-Pro.local" time="1.974">
   <properties/>
-  <testcase name="wordIsClickedTest" classname="AppTest" time="1.506"/>
-  <testcase name="rootTest" classname="AppTest" time="0.014"/>
-  <testcase name="wordIsCreatedTest" classname="AppTest" time="0.214"/>
-  <testcase name="wordDefinitionIsCreated" classname="AppTest" time="0.357"/>
+  <testcase name="wordIsClickedTest" classname="AppTest" time="1.194"/>
+  <testcase name="rootTest" classname="AppTest" time="0.019"/>
+  <testcase name="wordIsCreatedTest" classname="AppTest" time="0.32"/>
+  <testcase name="wordDefinitionIsCreated" classname="AppTest" time="0.422"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Thread-4] INFO org.eclipse.jetty.util.log - Logging initialized @872ms
+  <system-err><![CDATA[[Thread-4] INFO org.eclipse.jetty.util.log - Logging initialized @799ms
 [Thread-4] INFO spark.webserver.JettySparkServer - == Spark has ignited ...
 [Thread-4] INFO spark.webserver.JettySparkServer - >> Listening on 0.0.0.0:4567
 [Thread-4] INFO org.eclipse.jetty.server.Server - jetty-9.3.2.v20150730
-[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@337323f2{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
-[Thread-4] INFO org.eclipse.jetty.server.Server - Started @1047ms
-Apr 29, 2016 2:34:37 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@719575de{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+[Thread-4] INFO org.eclipse.jetty.server.Server - Started @958ms
+May 04, 2016 8:23:19 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [45:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:37 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:19 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [52:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:19 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [145:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:19 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [406:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:19 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [409:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:19 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [412:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:19 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [415:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:19 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [418:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:19 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [45:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:19 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [52:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:19 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [145:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [406:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [409:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [412:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [415:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [418:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [45:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [52:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [145:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [406:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [409:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [412:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [415:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' [418:8] Error in media list. (Invalid token "(". Was expecting one of: <S>, <IDENT>.)
-[qtp1544505647-20] ERROR spark.webserver.MatcherFilter - 
+[qtp1561477688-21] ERROR spark.webserver.MatcherFilter - 
 java.lang.NumberFormatException: For input string: "app.css"
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.lang.Integer.parseInt(Integer.java:580)
@@ -84,10 +84,10 @@ java.lang.NumberFormatException: For input string: "app.css"
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
 	at java.lang.Thread.run(Thread.java:745)
-Apr 29, 2016 2:34:38 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+May 04, 2016 8:23:20 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
 WARNING: CSS error: 'http://localhost:4567/entry/app.css' [1:1] Error in style sheet. (Invalid token "<". Was expecting one of: <EOF>, <S>, <IDENT>, "<!--", "-->", <HASH>, <IMPORT_SYM>, <PAGE_SYM>, <MEDIA_SYM>, <FONT_FACE_SYM>, <CHARSET_SYM>, ".", ":", "*", "[", <ATKEYWORD>.)
 [Test worker] INFO spark.webserver.JettySparkServer - >>> Spark shutting down ...
-[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@337323f2{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@719575de{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
 [Test worker] INFO spark.webserver.JettySparkServer - done
 ]]></system-err>
 </testsuite>
