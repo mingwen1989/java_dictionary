@@ -1,4 +1,4 @@
-# Dictionary
+# Java Dictionary
 
 #### By _Ming Wen_
 
